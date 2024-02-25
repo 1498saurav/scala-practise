@@ -19,6 +19,7 @@ lazy val root = (project in file(".")).
         "com.novocode" % "junit-interface" % "0.11" % Test)
   )
 
+libraryDependencies += "org.scalaj" %% "scalaj-http" % "2.4.2"
 
 testOptions in Test := Seq(Tests.Argument(TestFrameworks.JUnit, "-a"))
 fork in run := true

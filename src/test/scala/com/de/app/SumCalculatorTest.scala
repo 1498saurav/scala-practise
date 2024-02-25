@@ -6,7 +6,7 @@ class SumCalculatorTest extends  FunSuite{
 
   //TODO: Correct the assertion logic to pass the test
   test("To test Sum Calculator"){
-    assert(SumCalculator.sum(10,15) == 24)
+    assert(SumCalculator.sum(10,15) == 25)
   }
 
 }

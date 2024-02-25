@@ -2,7 +2,7 @@
 
 The code contains 4 object scala files with three different functions(square,cube and sum) and one implementation for spark.
 
-The idea of this sample scala project is to make you aware of how to write test in scalatest and run them
+The idea of this sample scala project is to make you aware of how to write com.test.test in scalatest and run them
 ## Assumptions
 - Java (1.8) and JAVA_HOME set
 - sbt 1.1.x
@@ -11,12 +11,12 @@ The idea of this sample scala project is to make you aware of how to write test 
 
 ## Instructions
 
-- Run command sbt test from the root of the project
-- It should pass 1 test case, 1 failing , 1 ignored
-- One of the test is ignored , follow the instructions over that function test case to enable it
-- One of the test is failing, correct the assetion logic to pass the test case.
-- Now run the test cases again using sbt clean test
-- This time there should be 3 test passing successfully.
+- Run command sbt com.test.test from the root of the project
+- It should pass 1 com.test.test case, 1 failing , 1 ignored
+- One of the com.test.test is ignored , follow the instructions over that function com.test.test case to enable it
+- One of the com.test.test is failing, correct the assetion logic to pass the com.test.test case.
+- Now run the com.test.test cases again using sbt clean com.test.test
+- This time there should be 3 com.test.test passing successfully.
 
 ## Runnng Sum Program using Spark-Submit
 - Download and extract Spark 2.4.0 (https://dlcdn.apache.org/spark/spark-3.2.1/spark-3.2.1-bin-hadoop3.2.tgz)
@@ -30,5 +30,5 @@ The idea of this sample scala project is to make you aware of how to write test 
 - Check sum=20 in the output
 
 ## Summary
-Expect similar test cases in the actual coding round
+Expect similar com.test.test cases in the actual coding round
 You should be able to run these steps on your machine and Inform the Hiring team once you are able to run these steps successfully
