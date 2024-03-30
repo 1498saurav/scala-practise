@@ -1,0 +1,15 @@
+city_id,outlet_id,sales
+A,A1,125
+A,A2,135
+A,A3,145
+B,A1,125
+B,A2,135
+B,A1,125
+
+Select a.* from (
+Select *,row_number over
+(
+partition_by city_id order by sales desc
+) as rnk from tablename
+) a where rnk<=2;
+

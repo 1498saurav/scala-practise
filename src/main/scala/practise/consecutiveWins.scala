@@ -19,7 +19,7 @@ object consecutiveWins extends App{
   private val tennis=spark.read.format("csv").options(options).load("src/main/resources/tennis.csv")
   tennis.printSchema()
 
- /* val df= */
+/* /* val df= */
  val arrays=tennis.orderBy("player_id", "match_date").collect().map(row => {
     val playerID = row.getInt(0)
     val match_date = row.getTimestamp(1)
@@ -60,10 +60,10 @@ object consecutiveWins extends App{
    .show()
 
 
+*/
 
 
 
-/*
   var df = tennis.withColumn("rn" , row_number().over(Window.partitionBy(col("player_id")).orderBy("match_date")))
     .filter(col("match_result")==="W")
 
@@ -81,8 +81,8 @@ object consecutiveWins extends App{
   df = df.withColumn("winners_rank" , dense_rank().over(Window.orderBy(desc("winning_streak_count"))))
     .filter(col("winners_rank")===1)
     .select(col("player_id"), col("winning_streak_count"))
-  df.show(100,false)*/
+  df.show(100,false)
 
 
-  //df.show(false)
+  df.show(false)
 }

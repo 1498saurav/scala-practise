@@ -1,0 +1,18 @@
+
+
+SELECT num_id,count(*) from tablename
+group by num_id
+having count(*) > 3;
+
+
+Txn_Id, num_id,rnk,
+1,1
+2,1
+3,1
+4,2
+5,4
+6,4
+7,4
+
+
+Select num_id,lead(1) over (partition by num_id) as rnk;
